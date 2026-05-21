@@ -9,6 +9,8 @@ RUN apt-get update && \
     apt install -y supervisor && \
     chmod +x pansou
 
+RUN file /app/pansou
+
 # 复制 supervisor 配置文件
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf    
     
