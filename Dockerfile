@@ -6,7 +6,7 @@ WORKDIR /app
 COPY pansou /app/pansou
 
 RUN apt-get update && \
-    apt install -y supervisor && \
+    apt install -y file supervisor && \
     chmod +x pansou
 
 RUN file /app/pansou
